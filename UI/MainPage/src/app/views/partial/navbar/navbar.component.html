@@ -1,0 +1,40 @@
+<div class="header-container p-0 d-flex row align-items-center m-0">
+    <div (click)="navigateTo('/home')" class="headerLogoContainer col-sm-3 col-6">
+        Evault
+    </div>
+    <div class="searchBoxContainer col-sm-3">
+        <span class="p-input-icon-right w-100">
+            <i class="pi pi-search"></i>
+            <input placeholder="search" [style]="" type="text" class="w-100" pInputText />
+        </span>
+    </div>
+    <div class="headerItemsContainer col-sm-6">
+        <div class="headerLinks d-flex justify-content-around">
+            <span (click)="navigateTo('/home')" class="headerLinksItems homeService">Home</span>
+            <span (click)="navigateTo('/about')" class="headerLinksItems cartService">About</span>
+            <span (click)="navigateTo('/contact')" class="headerLinksItems cartService contactService">contact</span>
+            <span (click)="navigateTo('/login')" class="headerLinksItems homeService">Login</span>
+        </div>
+    </div>
+    <div #dropdown style="
+    font-size: 2rem;
+" (click)="openProfile()" class="profileContainer d-md-none col-6 col-sm-1 d-flex justify-content-end">
+        <!-- <img class="profileImg" src="data:image/png;base64,{{ userIcon }}" alt="" /> -->
+        <i class="profileImg" class="fa-solid fa-bars"></i>
+    </div>
+</div>
+<div #dropdown appClickedOutside (clickedOutside)="handleChangeProfile()" *ngIf="showProfileSection"
+    class="container-fluid profileDropDownContainer p-0">
+    <div *ngIf="!changeProfilePic" class="row m-0">
+        <div class="profileDropDownItemsContainer d-flex flex-column p-4">
+            <button (click)="navigateTo('/home')" pButton pRipple type="button" label="Home"
+                class="p-button-raised p-button-secondary p-button-text my-1"></button>
+            <button (click)="navigateTo('/login')" pButton pRipple type="button" label="Login"
+                class="p-button-raised p-button-secondary p-button-text my-1"></button>
+            <button (click)="navigateTo('/about')" pButton pRipple type="button" label="About"
+                class="p-button-raised p-button-secondary p-button-text my-1 "></button>
+            <button (click)="navigateTo('/contact')" pButton pRipple type="button" label="Contact"
+                class="p-button-raised p-button-secondary p-button-text my-1 "></button>
+        </div>
+    </div>
+</div>

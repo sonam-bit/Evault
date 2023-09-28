@@ -1,0 +1,525 @@
+
+<div *ngIf="message!=null">
+    <div class="col-12 positionFixed cover w-100 h-100 message">
+      <span></span> 
+      <div class="card" style="width: 18rem;">
+       <div class="card-body card-height">
+         <h5 class="card-title">Message</h5>
+         <p class="card-text">{{message.message}}</p>
+         <a href="mailto:info@instincts.co.in" class="card-link" style="color:rgb(59, 58, 58);"><i class='fas fa-envelope'></i></a>
+         <a href="#" style="color:rgb(59, 58, 58);" class="card-link"><i class='fas fa-phone'></i></a>
+       </div>
+     </div>     
+    </div>
+ </div>
+ 
+ <div class="full">
+   <div *ngIf="!verified && message==null">
+     <div class="col-12 positionFixed cover w-100 h-100"></div>
+ 
+     <div class="container" style="font-family: sofia-pro, sans-serif">
+       <div class="row align-items-center mt-3 d-none">
+         <div class="col-4 desktop">
+           <img src="assets/instinctsTransparentLogo.png" width="" height="40px" class="mx-2" />
+         </div>
+         <div class="col-4 mobile">
+           <img src="assets/instinctsSmallLogo.png" width="" height="40px" class="mx-2" />
+         </div>
+         <div class="topNavbar desktop">
+           <li class="home topNavItems col-8 d-flex flex-direction-row " style="margin-left: 0;">
+             <p><i class="fa-solid fa-home"></i> Home</p>
+           </li>
+           <li class="home topNavItems col-8 d-flex flex-direction-row ">
+             <p><i class="fa fa-rocket"></i> Services</p>
+           </li>
+           <li class="home topNavItems col-8 d-flex flex-direction-row ">
+             <p ><i class="fa fa-vcard"></i> About</p>
+           </li>
+           <li class="home topNavItems col-8 d-flex flex-direction-row ">
+             <p ><i class="fa-solid fa-message"></i>Contact</p>
+           </li>
+           <li class="loginBtn col-8 d-flex flex-direction-row justify-content-end ">
+             <p >Login<i class="fa-solid fa-arrow-right mx-2"></i></p>
+           </li>
+         </div>
+ 
+         <li class="loginBtn loginBtnMobile mobile col-8 d-flex flex-direction-row justify-content-end ">
+           <p style="color:white;font-size:22px;margin-top:10px;">Login<i
+               class="fa-solid fa-arrow-right mx-2"></i></p>
+         </li>
+ 
+       </div>
+       <app-navbar></app-navbar>
+       <div class="row m-0 mt-3">
+         <div class="col">
+           <p style="color: #ffffff; font-size: 20px">
+             Welcome to Instincts
+           </p>
+         </div>
+       </div>
+ 
+       <div class="row m-0 my-4">
+         <div class="col headerTxt">
+           <h1 style="color: #ffffff">
+             If I say I'm your genie.<br> Would you trust me for your wishes?
+           </h1>
+           <br />
+
+           <button  pButton pRipple type="button" label="Register"
+             class="p-button-raised p-button-secondary p-button-text"></button>
+         </div>
+         <div class="d-flex flex-column justify-content-center">
+           <img src="assets/student.png" class="studentImg" />
+         </div>
+       </div>
+
+       <div class="desktop desktopItem center d-flex justify-content-center d-none d-md-block">
+         <div class="col-11 my-2 card2">
+ 
+           <div class="card" style="display: inline-flex;">
+             <img class="card-img-top" src="assets/54950.jpg" alt="Card image cap" width="30px" height="140px">
+             <div class="card-body card2body">
+               <h5 class="card-title"><i class='fas fa-puzzle-piece'></i> The Chest Quest</h5>
+               <p class="card-text">Of the Student By the Student For the Student</p>
+             </div>
+           </div>
+         </div>
+ 
+ 
+         <div class="desktop col-11 my-2 card2">
+ 
+           <div class="card" style="display: inline-flex;">
+ 
+             <img class="card-img-top" src="assets/5378405.jpg" alt="Card image cap" width="20px" height="140px">
+             <div class="card-body card2body">
+               <h5 class="card-title"> <i class="fa-solid fa-briefcase"></i> Hiring Now</h5>
+               <span class="mx-1 horizontalLine"><del class="cutLine">work for us</del> </span>
+               <span>work with us</span>
+             </div>
+           </div>
+         </div>
+ 
+ 
+         <div class="desktop col-11 my-2 card2">
+           <div class="card" style="display: inline-flex;">
+             <img class="card-img-top" src="assets/5127314.jpg" alt="Card image cap" width="20px" height="140px">
+             <div class="card-body card2body">
+               <h5 class="card-title"><i class="fa-solid fa-headset"></i> Support</h5>
+               <p class="card-text">Our contact service available 24X7 for you</p>
+ 
+             </div>
+           </div>
+         </div>
+       </div>
+ 
+ 
+       <div class="carouselContainer container-fluid">
+         <div id="carouselExampleCaptions" class="carousel carousel-dark slide">
+           <div class="carousel-indicators">
+             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+               aria-current="true" aria-label="Slide 1"></button>
+             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+               aria-label="Slide 2"></button>
+             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+               aria-label="Slide 3"></button>
+           </div>
+           <div class="carousel-innerContainer d-flex flex-column align-items-center justify-content-center">
+             <div class="carousel-inner mb-2">
+               <div class="carousel-item item1 active">
+                 <div class="card" style="">
+                   <img class="card-img-top" src="assets/54950.jpg" alt="Card image cap" height="140px" />
+                   <div class="card-body">
+                     <h5 class="card-title text-block" style="">The chest quest</h5>
+                     <p class="card-text d-flex flex-column">
+                       Of the Student By the Student For the Student
+                     </p>
+                   </div>
+                 </div>
+               </div>
+               <div class="carousel-item item1">
+                 <div class="card" style="">
+                   <img class="card-img-top" src="assets/5378405.jpg" alt="Card image cap" width="20px" height="140px" />
+                   <div class="card-body">
+                     <h5 class="card-title text-block" style="">Hiring Now</h5>
+                     <p class="card-text d-flex flex-column">
+                       <span class="mx-1 horizontalLine"><del class="cutLine">work for us</del> </span>
+                       <span>work with us</span>
+                     </p>
+                   </div>
+                 </div>
+               </div>
+               <div class="carousel-item item1">
+                 <div class="card" style="">
+                   <img class="card-img-top" src="assets/5127314.jpg" alt="Card image cap" width="20px" height="140px" />
+                   <div class="card-body">
+                     <h5 class="card-title text-block" style="">Support</h5>
+                     <p class="card-text d-flex flex-column">
+                       <!-- Our contact service available 24X7 for you -->
+                       <span>
+                         Feel free to reach us
+                       </span>
+                       <span>
+                         Not 24/7 as of now <span><img width="20px" src="/assets/40230.jpg" alt="" srcset="">:)</span>
+                       </span>
+                     </p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+ 
+           <div class="carouselButtonContainer">
+             <button class="carousel-control-prev" type="button"
+               data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+             </button>
+             <button  class="carousel-control-next" type="button"
+               data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+             </button>
+           </div>
+         </div>
+       </div>
+     </div>
+ 
+     <div class="row mt-3 desktop" style="font-family: sofia-pro, sans-serif">
+       <img src="assets/demo3.png" width="100%" height="500px" style="display: inline-block; border: none" />
+     </div>
+ 
+     <div class="row mt-3 mobile" style="font-family: sofia-pro, sans-serif">
+       <img src="assets/demo3.png" width="100%" height="235px" style="display: inline-block; border: none" />
+     </div>
+     <div class="p-0 container">
+       <div class="mt-4" style="background-color: #f9fbfe">
+         <h2 id="head">Services</h2>
+         <div class="carouselContainer container-fluid px-4">
+           <div id="carouselExampleCaptions1" class="carousel carousel-dark slide">
+             <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active"
+                 aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+                 aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"
+                 aria-label="Slide 3"></button>
+               <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="3"
+                 aria-label="Slide 4"></button>
+               <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="4"
+                 aria-label="Slide 5"></button>
+               <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="5"
+                 aria-label="Slide 6"></button>
+             </div>
+             <div class="carousel-innerContainer d-flex flex-column align-items-center justify-content-center">
+               <div class="carousel-inner mb-2">
+                 <div class="carousel-item active ">
+                   <div class="card" style="">
+                     <img class="card-img-top" src="assets/3572217.jpg" alt="Card image cap" width="364px"
+                       height="140px" />
+                     <div class="card-body">
+                       <h5 class="card-title text-block" style="">Printing</h5>
+                       <p class="card-text">
+                         kya aap bhi line mein khade khade thak gye hai<span><img width="20px" src="/assets/40230.jpg"
+                             alt="" srcset="">:)</span>
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel-item ">
+                   <div class="card" style="">
+                     <img class="card-img-top" src="assets/laundarylogo.png" alt="Card image cap" width="20px"
+                       height="140px" />
+                     <div class="card-body">
+                       <h5 class="card-title text-block" style="">Laundry</h5>
+                       <p class="card-text">
+                         make ur hands soft not with cream but by giving us ur laundry
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel-item ">
+                   <div class="card" style="">
+                     <img class="card-img-top" src="assets/3731109.jpg" alt="Card image cap" width="20px"
+                       height="140px" />
+                     <div class="card-body">
+                       <h5 class="card-title text-block" style="">grocery</h5>
+                       <p class="card-text">
+                         We have your everyday needs and more.
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel-item ">
+                   <div class="card" style="">
+                     <img class="card-img-top" src="assets/7778350.jpg" alt="Card image cap" width="20px"
+                       height="140px" />
+                     <div class="card-body">
+                       <h5 class="card-title text-block" style="">food</h5>
+                       <p class="card-text">
+                         it's instincts that makes you go UMMMMMMM
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel-item ">
+                   <div class="card" style="">
+                     <img class="card-img-top" src="assets/19362653.jpg" alt="Card image cap" width="20px"
+                       height="140px" />
+                     <div class="card-body">
+                       <h5 class="card-title text-block" style="">hackathon</h5>
+                       <p class="card-text">
+                         give a chance to your crazy ideas to become reality
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="carousel-item ">
+                   <div class="card" style="">
+                     <img class="card-img-top" src="assets/20944693.jpg" alt="Card image cap" width="20px"
+                       height="140px" />
+                     <div class="card-body">
+                       <h5 class="card-title text-block" style="">Event</h5>
+                       <p class="card-text">
+                         Adding a little sparkle to your life with our adornment
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="carouselButtonContainer">
+               <button class="carousel-control-prev" type="button"
+                 data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button  class="carousel-control-next" type="button"
+                 data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+             </div>
+           </div>
+         </div>
+         <div class="desktopCarouselContainer p-4 d-flex justify-content-center flex-wrap">
+ 
+           <div class="desktop col-11 my-2 card1">
+             <div class="card" style="">
+               <img class="card-img-top" src="assets/3572217.jpg" alt="Card image cap" width="364px" height="140px" />
+               <div class="card-body">
+                 <h5 class="card-title text-block" style="">Printing</h5>
+                 <p class="card-text">
+                   kya aap bhi line mein khade khade thak gye hai<span><img width="20px" src="/assets/40230.jpg" alt=""
+                       srcset="">:)</span>
+                 </p>
+               </div>
+             </div>
+           </div>
+           <div class="desktop col-11 my-2 card1">
+             <div class="card" style="">
+               <img class="card-img-top" src="assets/laundarylogo.png" alt="Card image cap" width="20px" height="140px" />
+               <div class="card-body">
+                 <h5 class="card-title text-block" style="">Laundry</h5>
+                 <p class="card-text">
+                   make ur hands soft not with cream but by giving us ur laundry
+                 </p>
+               </div>
+             </div>
+           </div>
+           <div class="desktop col-11 my-2 card1">
+             <div class="card" style="">
+               <img class="card-img-top" src="assets/3731109.jpg" alt="Card image cap" width="20px" height="140px" />
+               <div class="card-body">
+                 <h5 class="card-title text-block" style="">Grocery</h5>
+                 <p class="card-text">
+                   We have your everyday needs and more.
+                 </p>
+               </div>
+             </div>
+           </div>
+           <div class="desktop col-11 my-2 card1">
+             <div class="card" style="">
+               <img class="card-img-top" src="assets/7778350.jpg" alt="Card image cap" width="20px" height="140px" />
+               <div class="card-body">
+                 <h5 class="card-title text-block" >Food</h5>
+                 <p class="card-text">
+                   it's instincts that makes you go UMMMMMMM
+                 </p>
+               </div>
+             </div>
+           </div>
+           <div class="desktop col-11 my-2 card1">
+             <div class="card" >
+               <img class="card-img-top" src="assets/19362653.jpg" alt="Card image cap" width="20px" height="140px" />
+               <div class="card-body">
+                 <h5 class="card-title text-block" >Hackathon</h5>
+                 <p class="card-text">
+                   Give a chance to your crazy ideas to become reality
+                 </p>
+               </div>
+             </div>
+           </div>
+           <div class="desktop col-11 my-2 card1">
+   
+             <div class="card">
+               <img class="card-img-top" src="assets/20944693.jpg" alt="Card image cap" width="20px" height="140px" />
+               <div class="card-body">
+                 <h5 class="card-title text-block" >Event</h5>
+                 <p class="card-text">
+                   Adding a little sparkle to your life with our adornment
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+
+ 
+     <div style="
+         background-color: #eee;
+         font-family: sofia-pro, sans-serif;
+         border-radius: 5px;
+          margin-top: 35px;
+          /*
+         margin-bottom: px; */
+         text-align: center;
+         color: #000;
+       ">
+       <br /><br />
+ 
+       <h5>For school & college management</h5>
+       <h3>Want to incorporate Instincts services</h3>
+       <h3>in your school/college?</h3>
+       <p>Take a step to make college life of students more easier</p>
+       <button pButton pRipple type="button" label="Incorporate Now"
+         class="p-button-raised p-button-secondary p-button-text incorporoteBtn" style="background-color:  #172337 !important;
+         color: #ccc !important;"></button>
+       <br /><br />
+     </div>
+   </div>
+ 
+   <div class="mobileFooter mobile d-none" style="background-color: #333; color: white">
+     <div class="container py-2">
+       <div class="row">
+     
+       </div>
+       <div class="row">
+         <div class="col-6">
+           <p>Reach Us</p>
+           <div>
+             <p class="">
+               <img src="assets/whatsapp.jpg" width="30px" height="20px" />+9182XXXX
+             </p>
+             <p class="">
+               <img src="assets/email.png" width="25px" height="20px" />
+               info@instincs.co.in
+             </p>
+           </div>
+         </div>
+         <div class="col-6">
+           <p>Quiks links</p>
+           <div>
+             <a  style="cursor: pointer">Login</a><br />
+             <a >Contact us</a><br />
+             <a style="color: #e7dfdf; cursor: pointer">About Us</a>
+           </div>
+         </div>
+         <div class="col-12">
+           <span>Address</span>
+           <div>
+             <span class="d-flex align-items-center">
+               <span><i class="fa-solid fa-location-dot"></i></span>
+               <span class="mx-3">Gharaun , S.A.S Nagar Mohali, Punjab 140413</span>
+             </span>
+           </div>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-12 d-flex align-items-center">
+           <div class="col-3">
+             Social Media
+           </div>
+           <div class="col-3 d-flex justify-content-around">
+ 
+             <i class="fa-brands fa-instagram"></i>
+             <i class="fa-brands fa-linkedin"></i>
+             <i class="fa-brands fa-twitter"></i>
+           </div>
+         </div>
+         <div class="py-0 px-3 col-12 d-flex justify-content-around">
+           <span class="row">
+             <span class="col-12" >Privacy Policy</span>
+             <span class="col-12" >Cookie Policy</span>
+           </span>
+           <span class="row">
+             <span class="col-12" >Refund/cancellation Policty</span>
+             <span class="col-12" >Terms and Conditions</span>
+           </span>
+         </div>
+       </div>
+     </div>
+   </div>
+
+ 
+ </div>
+ <div  *ngIf="message==null" class="deskFooter m-0 row">
+ 
+   <div class="upperFooter mb-4 col-12 justify-content-between row">
+     <div class="footerAddress col-6 col-md-12">
+       <h5 class="addressHeader" style="margin-top: 20px;">
+         Registered Address
+       </h5>
+       <p style="color:#ddd; margin-top:20px;"> SAS
+         Nagar, Punjab, India<br>Pin Code: 140301</p>
+         <div class="col-12">
+           <div class="my-2">
+             <span class="mx-2"><i class="fa-solid fa-phone" ></i></span>
+             <span>8292009935</span>
+           </div>
+           <div>
+             <span class="mx-2"><i class="fa-solid fa-envelope"></i></span>
+             <span class="">info@instincts.co.in</span>
+           </div>
+         </div>
+       
+ 
+     </div>
+ 
+     <div class="footerConnect col-6 col-md-12 m-0" style="margin-top: 30px;">
+       <h4 class="connectHeader" style="margin-left: 80px; "><u>Join us</u></h4>
+       <div class="iconContainer">
+ 
+         <i class="fa fa-facebook addressLogo"
+           style="background-color:#3b5998; margin-right: 15px;font-size:24px;margin-top: 10px;"></i>
+         <i class="fa fa-instagram addressLogo"
+           style="background-color:#bc2a8d; margin-right: 15px;font-size:24px;margin-top: 10px;"></i>
+         <i class="fa fa-linkedin addressLogo"
+           style="background-color:#0072b1; margin-right: 15px;font-size:24px;margin-top: 10px;"></i>
+         <i class="fa fa-whatsapp addressLogo"
+           style="background-color:#128C7E; margin-right: 15px;font-size:24px;margin-top: 10px;"></i>
+       </div>
+ 
+ 
+     </div>
+   </div>
+   <div class="linkContainer col-12 row">
+     <div class="col-md-8 col-12">
+       <li class="footerListItem m-0">
+         © 2023 | Instincts
+       </li>
+     </div>
+     <div class="col-12 col-md-4 d-flex justify-content-between">
+       <li class="footerListItem" >
+         Terms of Service
+       </li>
+       <li class="footerListItem" >
+         Privacy Policy
+       </li>
+       <li class="footerListItem" >
+         Cookie Policy
+       </li>
+       <li class="footerListItem" >
+         Refund Policy
+       </li>
+     </div>
+   </div>
+ </div>
